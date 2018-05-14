@@ -1,0 +1,5 @@
+<div>
+    <mat-toolbar color="primary">Comments</mat-toolbar>
+    <app-card *ngFor="let comment of (comments$ | async)"
+              [textShow]="comment"></app-card>
+</div>

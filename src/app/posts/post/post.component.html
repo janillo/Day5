@@ -1,0 +1,5 @@
+<div>
+    <mat-toolbar color="primary">Posts</mat-toolbar>
+    <app-card *ngFor="let post of (posts$ | async)"
+              [textShow]="post"></app-card>
+</div>
